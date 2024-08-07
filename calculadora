@@ -1,10 +1,8 @@
-# calculadora
-#calculadora
+# Exemplo de uso
+calc = Calculadora()
 
-def sum(a, b):
-    return (a + b)
-
-a = int(input('Enter 1st number: '))
-b = int(input('Enter 2nd number: '))
-
-print(f'Sum of {a} and {b} is {sum(a, b)}')
+print(calc.calcular('adicionar', 10))  # Adiciona 10
+print(calc.calcular('subtrair', 3))    # Subtrai 3 (resultado anterior é limpo)
+print(calc.calcular('multiplicar', 5)) # Multiplica por 5 (resultado anterior é limpo)
+print(calc.calcular('dividir', 2))     # Divide por 2 (resultado anterior é limpo)
+print(calc.calcular('dividir', 0))     # Divisão por zero
